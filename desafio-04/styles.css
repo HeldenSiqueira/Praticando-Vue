@@ -18,7 +18,22 @@
 	background-color: red;
 }
 
-.quadrado{
-	width: 100;
-	height: 100;
+.quadrado {
+	width: 100px;
+	height: 100px;
+}
+
+.direita {
+	float: right;
+}
+
+.barra-progresso {
+	height: 30px;
+	width: 500px;
+	border: 1px solid #000;
+}
+
+.progresso {
+	background-color: red;
+	height: 100%;
 }
