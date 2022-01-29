@@ -1,6 +1,6 @@
 <template>
     <div class="componente">
-        <h2>Alterar os Dados de Usuári</h2>
+        <h2>Alterar os Dados de Usuário</h2>
         <p>Edite as informações</p>
          <p>Edite as informações</p>
     </div>
