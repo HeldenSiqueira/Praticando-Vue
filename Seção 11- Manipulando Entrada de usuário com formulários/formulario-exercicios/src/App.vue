@@ -28,7 +28,7 @@
 					<span><input type="radio" value="outro" v-model="produto"> Outro</span>
 				</Rotulo>
 				<Rotulo nome="Prioridade">
-					<select v-model="prioridad">
+					<select v-model="prioridade">
 						<option v-for="prioridade in prioridades"
 							:value="prioridade.codigo"
 							:key="prioridade.codigo"
