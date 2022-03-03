@@ -2,9 +2,11 @@
 	<div id="app">
 		<h1>Super Quiz</h1>
 		<Question v-if="questionMode"
-		:question="questions[currentQuestion]" />
+			:question="questions[currentQuestion]"
+			@answered="showResult"  />
 		<Result v-else
-		:result="result" />
+		:result="result" 
+		@confirmed="nextQuestion" />
 	</div>
 </template>
 
@@ -16,6 +18,7 @@ import Result from './components/Result.vue'
 
 
 export default {
+	name: 'app',
 	//registrando os componentes
 	components: { Question, Result },
 	data() {
@@ -24,6 +27,22 @@ export default {
 			questionMode: true,
 			questions,
 			currentQuestion: 0
+		}
+	},
+	methods: {
+		//mostrar resultado
+		showResult(result) {
+			this.result = result
+			// tirar pergunta
+			this.questionMode = false
+		},
+		nextQuestion() {
+			//mostrar pergunta
+			this.questionMode = true
+			// calcular valor r valor randomico de 0 ate tamanho do array
+			let r = Math.random() * this.questions.length
+			//converter para parseInt
+			this.currentQuestion = parseInt(r)
 		}
 	}
 

@@ -3,6 +3,8 @@
     <div class="result" :class="{wrong: !result}">
         <span v-if="result">resposta Certa! :) </span>
         <span v-else> Resposta Errada! :( </span>
+        <hr>
+        <button @click="$emit('confirmed')">Proxima Pergunta</button>
     </div>
 </template>
 
