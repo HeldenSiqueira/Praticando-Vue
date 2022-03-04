@@ -1,12 +1,14 @@
 <template>
 	<div id="app">
 		<h1>Super Quiz</h1>
+		<transition name="flip" mode="out-in">
 		<Question v-if="questionMode"
 			:question="questions[currentQuestion]"
 			@answered="showResult"  />
 		<Result v-else
 		:result="result" 
 		@confirmed="nextQuestion" />
+		</transition>
 	</div>
 </template>
 
@@ -71,7 +73,7 @@ body {
 	font-weight: 200;
 	font-size: 4rem;
 }
-
+/* animações */ 
 @keyframes flip-out {
 	from { transform: rotateY(0deg); }
 	to { transform: rotateY(90deg); }
