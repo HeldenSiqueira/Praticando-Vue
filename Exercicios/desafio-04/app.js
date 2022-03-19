@@ -28,10 +28,11 @@ new Vue({
 			let valor = 0
 			const temporizador = setInterval(() => {
 				valor += 5
-				this.width = '${ valor }%'
+				this.width = `${valor}%`
+				//parando o temporizador no 100
 				if (valor == 100) clearInterval(temporizador)
 
-			}, 500)
+			}, 300)
 		},
 
 		setPerigo(event) {
