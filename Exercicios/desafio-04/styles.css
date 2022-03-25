@@ -30,9 +30,9 @@ background-color: brown;
 }
 
 .barra-progresso {
-	height: 301px;
+	height: 30px;
 	width: 200px;
-	border: 1px solid #0000;
+	border: 1px solid #000;
 }
 
 .progresso {
