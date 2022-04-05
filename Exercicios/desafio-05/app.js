@@ -4,7 +4,7 @@ new Vue({
 		array: ['Pedro', 'Bia', 'Ana', 'Rebeca'],
 		livro: {
 			titulo: 'O Senhor dos Anéis',
-			autor: 'J.R.R. Tolkiens',
+			autor: 'J.R Tolkiens',
 			volume: '3'
 		},
 		aluno: {
