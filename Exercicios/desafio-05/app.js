@@ -5,7 +5,7 @@ new Vue({
 		livro: {
 			titulo: 'O Senhor dos Anéis',
 			autor: 'J.R.R. Tolkiens',
-			volume: '4'
+			volume: '2'
 		},
 		aluno: {
 			id: 10,
