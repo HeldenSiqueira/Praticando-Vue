@@ -2,9 +2,9 @@
     <nav class="menu">
         <ul>
             <router-link to="/" tag="li" active-class="active" exact>
-                <a>Início</a></router-link>
+                <a>Iníco</a></router-link>
             <router-link to="/usuario" tag="li" active-class="active">
-                <a>Usuáro</a></router-link>
+                <a>Usuário</a></router-link>
         </ul>
     </nav>
 </template>
